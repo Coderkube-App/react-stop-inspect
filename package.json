@@ -1,6 +1,6 @@
 {
   "name": "react-stop-inspect",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Stop browser inspection and devtools in React, Vite, Next.js, and Webpack applications.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
