@@ -1,0 +1,72 @@
+{
+  "name": "react-stop-inspect",
+  "version": "1.0.1",
+  "description": "Stop browser inspection and devtools in React, Vite, Next.js, and Webpack applications.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./vite": {
+      "types": "./dist/vite.d.ts",
+      "import": "./dist/vite.mjs",
+      "require": "./dist/vite.js"
+    },
+    "./webpack": {
+      "types": "./dist/webpack.d.ts",
+      "import": "./dist/webpack.mjs",
+      "require": "./dist/webpack.js"
+    },
+    "./next": {
+      "types": "./dist/next.d.ts",
+      "import": "./dist/next.mjs",
+      "require": "./dist/next.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts src/react.tsx src/vite.ts src/webpack.ts src/next.ts --format cjs,esm --dts --minify --clean",
+    "dev": "tsup src/index.ts src/react.tsx src/vite.ts src/webpack.ts src/next.ts --format cjs,esm --watch --dts",
+    "lint": "tsc"
+  },
+  "keywords": [
+    "react",
+    "nextjs",
+    "vite",
+    "webpack",
+    "inspect",
+    "devtools",
+    "security",
+    "anti-debug",
+    "plugin"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8.0",
+    "react-dom": ">=16.8.0"
+  },
+  "peerDependenciesMeta": {
+    "react": {
+      "optional": true
+    },
+    "react-dom": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^25.6.0",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
