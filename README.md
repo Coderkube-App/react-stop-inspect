@@ -2,6 +2,12 @@
 
 A lightweight library to prevent browser code inspection and DevTools usage in React, Vite, Next.js, and Webpack applications. Supports both JavaScript and TypeScript.
 
+## 🎬 Demo
+
+<p align="center">
+  <img src="./assets/cli_demo.svg" alt="react-stop-inspect Demo" width="100%" style="max-width: 860px;" />
+</p>
+
 ## Features
 
 -  **Disable Right-Click**: Prevents the context menu from opening.
